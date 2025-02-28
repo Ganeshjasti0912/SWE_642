@@ -1,3 +1,4 @@
+<!-- Ganesh Jasti -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,12 +14,12 @@
             min-height: 100vh;
         }
         .header-box {
-            border: 5px solid #006633;
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+            background-color: #006633;
+            color: #FFCC33;
             padding: 20px;
             text-align: center;
-            background-color: #FFCC33; /* GMU Yellow */
-            color: #006633; /* GMU Green */
+            border: 5px solid #006633;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .table {
             border: 2px solid #006633;
@@ -33,6 +34,19 @@
         .table tbody tr:nth-of-type(even) {
             background-color: #FFF3CC;
         }
+        /* Nav bar Styling */
+        nav a {
+            text-decoration: none;
+            color: #006633;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        
+        nav a:hover {
+            background-color: #006633;
+            color: #FFCC33;
+            border-radius: 5px;
+        } 
         .footer {
             background-color: #006633; /* GMU Green */
             color: white;
@@ -61,13 +75,30 @@
     </style>
 </head>
 <body>
-    <div class="container header-box">
+
+    <!-- Navigation  Bar-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #FFCC33;color:#006633;">
+        <div >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cs_department_info.html">CS Dept Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cs_department_survey2.html">Survey</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="header-box">
         <h1>Computer Science Department</h1>
     </div>
 
     <div class="container mt-4">
         <p>The Computer Science Department at George Mason University offers comprehensive programs designed to equip students with strong theoretical foundations and practical skills. Our faculty are leaders in research, and we offer state-of-the-art facilities to support academic growth.</p>
 
+        <!-- List of MS Degree Programs -->
         <h2>MS Degree Programs</h2>
         <ul>
             <li>MS in Computer Science</li>
@@ -75,8 +106,10 @@
             <li>MS in Software Engineering</li>
         </ul>
 
+        <!-- Required Courses Section -->
         <h3>Required Courses for Each MS Degree Program</h3>
 
+         <!-- MS in Computer Science Courses -->
         <h4>MS in Computer Science</h4>
         <table class="table table-bordered">
             <thead>
@@ -101,6 +134,7 @@
             </tbody>
         </table>
 
+        <!-- MS in Information Security and Assurance Courses -->
         <h4>MS in Information Security and Assurance</h4>
         <table class="table table-bordered">
             <thead>
@@ -125,6 +159,7 @@
             </tbody>
         </table>
 
+        <!-- MS in Software Engineering Courses -->
         <h4>MS in Software Engineering</h4>
         <table class="table table-bordered">
             <thead>
@@ -149,7 +184,8 @@
             </tbody>
         </table>
 
-        <a href="cs_department_survey.html" class="btn btn-success">Take the CS Department Survey</a>
+        <!-- Survey Button -->
+        <a href="cs_department_survey2.html" class="btn btn-success">Take the CS Department Survey</a>
     </div>
 <br>
     <!-- Footer Section -->
